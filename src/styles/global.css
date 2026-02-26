@@ -1,3 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* 1. Tell Tailwind to check the HTML tag for the .dark class */
+@variant dark (&:where(.dark, .dark *));
+
+/* 2. Apply the background color to the WHOLE PAGE */
+html,
+body {
+  @apply h-full w-full;
+}
+
+/* Default (Light) */
+body {
+  @apply bg-white text-zinc-900;
+}
+
+/* Dark Mode Override */
+:root.dark body {
+  @apply bg-zinc-950 text-zinc-200;
+}
