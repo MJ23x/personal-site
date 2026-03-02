@@ -55,7 +55,7 @@ const Content = () => {
             summary="Hybrid deep learning pipeline utilizing a U-Net architecture and ResNet-50."
             details="Engineered a dual-stage architecture to process 3,064 MRI scans. The U-Net stage generates binary masks for tumor localization (achieving a 0.75 Dice Score), while the ResNet-50 stage classifies the tumor type (Meningioma, Glioma, Pituitary) with 96% accuracy."
             techStack="Python • PyTorch • OpenCV • ResNet-50"
-            links={[{ label: "View IEEE Report", url: "/ieee.pdf" }]}
+            links={[{ label: "Github", url: "https://github.com/MJ23x/CPS843-Term-Project-Deliverables" }, { label: "View IEEE Report", url: "/ieee.pdf" }]}
           />
 
           <ProjectItem

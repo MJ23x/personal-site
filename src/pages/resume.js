@@ -49,7 +49,7 @@ export default function Resume() {
             PDF previews are optimized for desktop.
           </p>
           <a
-            href="/draft_resume.pdf"
+            href="/final_resume.pdf"
             className="text-blue-600 dark:text-blue-400 font-semibold underline"
           >
             Click here to view file
