@@ -28,32 +28,32 @@ export default function Projects() {
         <ProjectItem
           title="6809 Emulator"
           summary="Cycle-accurate CPU emulation."
-          details=""
+          details="This is the microprosser used to teach me in the Computer Organization II course at TMU (CPS310) so I thought I'd build it myself"
           techStack="C++ • SDL3 • Assembly"
-          links={[{ label: "Github", url: "#" }]}
+          links={[{ label: "Github Repo", url: "https://github.com/MJ23x/m6809-emulator" }]}
         />
 
         <ProjectItem
           title="Personal website"
-          summary="Built with Gatsby, deployed via GitOps workflow."
-          details="A statically generated React site using Tailwind CSS v4. Implements a continuous deployment pipeline where git commits automatically trigger builds and deployments via Netlify/Vercel."
+          summary="Built with Gatsby and deployed with Netlify"
+          details="A statically generated React site using Tailwind CSS v4. Implements a continuous deployment pipeline where git commits automatically trigger builds and deployments via Netlify."
           techStack="React • Gatsby • CI/CD"
-          links={[{ label: "GitHub Repo", url: "#" }]}
+          links={[{ label: "GitHub Repo", url: "https://github.com/MJ23x/personal-site" }]}
         />
 
-        {/* COMING SOON SECTION */}
+        {/* Coming soon */}
         <div className="mt-8 pt-8">
           <h3 className="text-sm font-bold uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-6">
-            // In the Lab (Coming Soon)
+            // Still working on
           </h3>
 
           <div className="opacity-70 hover:opacity-100 transition-opacity">
             <ProjectItem
               title="AetherScripts"
               summary="Offline-first clinical documentation engine."
-              details="Runs Google's MedASR locally..."
-              techStack="Rust (Tauri) • React • ONNX"
-              links={[{ label: "Demo", url: "#" }]}
+              details="Oflline first and privacy focused use of AI models. More to mimick what people and organizations want from AI"
+              techStack="TBA"
+              links={[{ label: "None for now", url: "#" }]}
             />
           </div>
 
@@ -65,7 +65,7 @@ export default function Projects() {
               techStack="Unity • C# • Meta SDK"
             />
           </div>
-          
+
         </div>
       </div>
     </Layout>

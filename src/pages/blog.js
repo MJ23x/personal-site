@@ -12,8 +12,7 @@ export default function Blog() {
         </h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-md mx-auto mb-8">
           I'm currently writing about my experience building{" "}
-          <strong>AetherScripts</strong> and the{" "}
-          <strong>Chip-8 Emulator</strong>. Check back soon!
+          <strong>AetherScripts</strong> and other topics I'm interested in.. still deciding if I should make this personal or not. Check back soon!
         </p>
         <Link
           to="/"

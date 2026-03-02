@@ -15,7 +15,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/react": "^3.1.1",
+    "@mdx-js/react": "^2.3.0",
+    "@tailwindcss/postcss": "^4.2.1",
     "autoprefixer": "^10.4.24",
     "gatsby": "^5.14.6",
     "gatsby-plugin-image": "^3.16.0",

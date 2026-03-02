@@ -6,7 +6,7 @@ const ProjectItem = ({ title, summary, details, techStack, links }) => {
   return (
     <div
       onClick={() => setIsOpen(!isOpen)}
-      className="mb-8 pl-6 border-l-2 border-zinc-200 hover:border-zinc-400 dark:border-zinc-700 dark:hover:border-white transition-colors cursor-pointer group -ml-[2px]"
+      className="mb-8 pl-6 border-l-2 border-zinc-400 hover:border-zinc-600 dark:border-zinc-700 dark:hover:border-white transition-colors cursor-pointer group -ml-[2px]"
     >
       <div className="flex justify-between items-start">
         <div>
@@ -41,8 +41,7 @@ const ProjectItem = ({ title, summary, details, techStack, links }) => {
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100 mt-4" : "max-h-0 opacity-0"}`}
       >
-        {/* STYLE UPDATE: Border top color for the expanded section */}
-        <p className="text-zinc-700 dark:text-zinc-300 text-sm leading-relaxed mb-4 border-t border-zinc-200 dark:border-zinc-800 pt-4">
+        <p className="text-zinc-700 dark:text-zinc-300 text-sm leading-relaxed mb-4 border-t border-zinc-400 dark:border-zinc-800 pt-4">
           {details}
         </p>
 
@@ -52,10 +51,17 @@ const ProjectItem = ({ title, summary, details, techStack, links }) => {
               <a
                 key={index}
                 href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-blue-800 dark:hover:text-blue-300 hover:underline flex items-center gap-1"
                 onClick={(e) => e.stopPropagation()}
               >
-                {link.label} ↗
+                {link.label}
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
               </a>
             ))}
           </div>

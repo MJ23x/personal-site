@@ -11,7 +11,7 @@ body {
 
 /* Default (Light) */
 body {
-  @apply bg-white text-zinc-900;
+  @apply bg-[#f4f1ea] text-zinc-900;
 }
 
 /* Dark Mode Override */
