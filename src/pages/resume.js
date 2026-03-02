@@ -10,7 +10,7 @@ export default function Resume() {
             Resume
           </h1>
 
-          {/* Download Button (Always visible) */}
+          {/* Download Button */}
           <a
             href="/final_resume.pdf"
             download
@@ -34,7 +34,7 @@ export default function Resume() {
           </a>
         </div>
 
-        {/* THE EMBED (Hidden on Mobile 'hidden md:block') */}
+        {/* Resume */}
         <div className="hidden md:block w-full h-[800px] border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden bg-zinc-100">
           <iframe
             src="/final_resume.pdf"
@@ -43,7 +43,7 @@ export default function Resume() {
           />
         </div>
 
-        {/* THE MOBILE FALLBACK (Visible only on Mobile 'md:hidden') */}
+        {/* Mobile version */}
         <div className="md:hidden text-center py-20 border border-dashed border-zinc-300 dark:border-zinc-700 rounded-lg">
           <p className="text-zinc-500 dark:text-zinc-400 mb-4">
             PDF previews are optimized for desktop.
