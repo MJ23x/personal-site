@@ -12,7 +12,7 @@ export default function Resume() {
 
           {/* Download Button (Always visible) */}
           <a
-            href="/draft_resume.pdf"
+            href="/final_resume.pdf"
             download
             className="px-4 py-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium rounded-md hover:opacity-90 transition-opacity flex items-center gap-2"
           >
@@ -37,7 +37,7 @@ export default function Resume() {
         {/* THE EMBED (Hidden on Mobile 'hidden md:block') */}
         <div className="hidden md:block w-full h-[800px] border border-zinc-200 dark:border-zinc-800 rounded-lg overflow-hidden bg-zinc-100">
           <iframe
-            src="/draft_resume.pdf"
+            src="/final_resume.pdf"
             className="w-full h-full"
             title="Resume PDF"
           />
